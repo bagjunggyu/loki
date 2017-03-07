@@ -1,4 +1,4 @@
-### elementary OS Loki 0.4 ###
+### elementary OS 0.4 Loki ###
 
 #!/bin/bash
 sudo sed -i 's/loki/xenial/g' /etc/apt/sources.list.d/elementary.list /etc/apt/sources.list.d/patches.list
