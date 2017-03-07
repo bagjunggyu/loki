@@ -18,7 +18,7 @@ else
     apt-get dist-upgrade -y;
     apt-add-repository ppa:philip.scott/elementary-tweaks -y
     apt-get update
-    apt-get install nimf elementary-tweaks -y
+    apt-get install elementary-tweaks -y
     apt-get autoremove fonts-nanu* fonts-unfon* -y
     apt-get autoclean;apt-get clean
     rm -rf .local/share/scratch-text-editor/
