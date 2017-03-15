@@ -9,7 +9,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys email "'F4'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "'F10'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys previous "'F9'"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['F11']"
-git clone https://github.com/bagjunggyu/alias.git;mv alias/.bash_aliases .;rm -rf alias
+cd && wget https://github.com/bagjunggyu/alias/archive/master.zip
+unzip master.zip && mv ~/alias-master/.bash_aliases . && rm master.zip && rm -r ~/alias-master
 
 if [ $UID -ne 0 ]; then
     sudo $0
