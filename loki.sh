@@ -3,7 +3,8 @@
 #!/bin/bash
 sudo sed -i 's/loki/xenial/g' /etc/apt/sources.list.d/elementary.list /etc/apt/sources.list.d/patches.list
 sudo apt-get update
-sudo apt-get install nimf git software-properties-common gdebi gparted gnome-disk-utility -y
+sudo apt-get install nimf git software-properties-common gdebi gparted gnome-disk-utility firefox firefox-locale-ko -y
+sudo apt-get remove epiphany-browser -y
 im-config -n nimf
 gsettings set org.gnome.settings-daemon.plugins.media-keys email "'F4'"
 gsettings set org.gnome.settings-daemon.plugins.media-keys next "'F10'"
